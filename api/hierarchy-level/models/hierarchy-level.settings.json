@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hierarchy_levels",
+  "info": {
+    "name": "hierarchy_level"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "SectionDescription": {
+      "type": "richtext"
+    },
+    "CoverPicture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Level": {
+      "type": "uid"
+    },
+    "LevelLabel": {
+      "type": "string"
+    }
+  }
+}

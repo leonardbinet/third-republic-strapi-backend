@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hierarchy-levels",
+      "handler": "hierarchy-level.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hierarchy-levels/count",
+      "handler": "hierarchy-level.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hierarchy-levels/:id",
+      "handler": "hierarchy-level.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/hierarchy-levels",
+      "handler": "hierarchy-level.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/hierarchy-levels/:id",
+      "handler": "hierarchy-level.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/hierarchy-levels/:id",
+      "handler": "hierarchy-level.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
